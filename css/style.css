@@ -1,50 +1,23 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+:root {
+    --font-sans-serif: futura-pt, sans-serif;
+    --dark-gray: #737373;
+    --light-gray: #ddd;
+    --white: #fff;
+    --teal: #28b6b8;
 }
 
-img {
-  max-width: 100%;
-}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
-h1, h2, h3{
-    font-family: sans-serif;
-}
-
-h3 {
-    text-transform: uppercase;
-    color: white;
-    font-size: xx-small;
-}
-
-a {
-    text-emphasis: none;
-}
-
-.container {
-    margin: 50px;
-    text-align: center;
-}
-
-.original {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: 160px 160px 160px;
-    grid-gap: 10px;
-    margin: 40px;
-    justify-content: center;
-}
-
-.button_text {
-    background-color: rgb(42, 221, 212);
-    color: white;
-    border-radius: 20px;
-    padding: 15px 25px 15px 25px;
-    text-decoration: none;
+body {
+    font-family: var(--font-sans-serif);
+    color: var(--dark-gray);
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.667;
 }
