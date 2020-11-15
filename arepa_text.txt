@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola Arepa</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet"/>
+  </head>
+  <body>
+    Hola Arepa
+
+    Order Takeout Menus Visit Meal Kits Press Gift Cards Hai Hai
+
+    Introducing HOLA AT HOME Meal Kits!
+    We’re excited to offer you a variety of meal kits for Wednesday and Saturday curbside pickup to heat up and enjoy at home!  Hola is here to spice up your weekly meal rotation with our Latin staples that you love!  
+
+    Open for Patio & Indoor Dining
+    We’re looking forward to welcoming you to dine with us.  It’s a whole new world at Hola Arepa in the time of COVID-19.  We can’t wait to serve you the food & drinks that you love in a familiar space, but the dining experience may be a little different than before.  New safety protocols, less table touches and a little less staff interaction are a few things we’re doing for our health and yours.  For full details on this & to make a reservation, please click on the VISIT button below.
+
+    If you aren’t quite ready to start dining out yet, Hola still tastes delicious at home and our Curbside Pickup makes it easy. Click the Order Curbside Pickup button below to order online.﻿
+
+    Dine In & Takeout Hours:
+    Tue - Thu: 4pm to 9pm
+    Fri: 4pm to 10pm
+    Sat: 10am to 10pm
+    Sun: 10am to 9pm
+
+    Thank you for your continued support during this time!
+
+    Dine with us
+
+    Order Curbside Pickup
+
+    Hola Arepa is a restaurant in South Minneapolis serving our take on Latin street food.  We serve Venezuelan-style stuffed arepas, Latin American-influenced small plates, and tropical craft cocktails.
+
+    Chef Christina Nguyen & her partner Birk Grudem started Hola Arepa as a food truck in 2011. Though the truck has been mostly in hibernation since they opened their brick & mortar restaurant in 2014, you can always enjoy their arepas, other dishes & cocktails in a space inspired by their travels to beach towns and charming old cafes in South America, Central America and Mexico.
+
+    View Menus
+
+    All of our food is made from scratch with love. Arepas are made fresh every day from cornmeal dough and pattied by hand.
+
+    Arepas are cooked on a griddle until golden brown, then split open and stuffed with meats, veggies, cheeses, and homemade salsas. Arepas & most of our dishes are gluten-free.
+
+    Hours
+    Tue - Thu 4pm - 9pm
+    Fri 4pm - 10pm
+    Sat 10am - 10pm
+    Sun 10am - 9pm
+    Mondays Siesta                                                                                                                       
+
+    Location
+    3501 Nicollet Avenue
+    Minneapolis, MN 55408
+    612 345 5583
+
+    info@holaarepa.com
+
+    Follow us on Instagram @holaarepa for all the latest!
+
+    Facebook Twitter Instagram
+  </body>
+</html>
