@@ -13,6 +13,10 @@ html {
     box-sizing: inherit;
   }
 
+/*typography*/
+/*note: will adjust sizing and text color (white) when coding actual page; kept dark gray for readability againt white background. Do I need to specify text size here? I don't think so; it's more text style for now, can add size when doing individual sections, I think).
+*/
+
 body {
     font-family: var(--font-sans-serif);
     color: var(--dark-gray);
@@ -20,4 +24,83 @@ body {
     font-weight: 300;
     font-style: normal;
     line-height: 1.667;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-sans-serif);
+}
+
+h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+
+h2 {
+    font-weight: 500; /* weight isn't looking exact, try again when showing up on top of image*/
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .08em;
+}
+
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .08em;
+}
+
+h4 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*links
+note: commented out all white links, to preserve visibility for this exercise. Will un-comment out for the actual page.*/
+
+a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+/*
+a:link {
+    color: var(--white);
+}
+
+a:visited {
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--light-gray);
+}
+
+/* A link that is selected/active (except for the logo, need to make sure doesn't change color*/
+/*a:active {
+    color: var(--light-gray);
+}
+
+/*images*/
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/*component*/
+
+.component {
+    max-width: initial;
+}
+
+.component__img {
+    border: 1px solid var(--dark-gray);
+    overflow-x: auto;
+}
+
+.component__code {
+    border: 1px solid var(--dark-gray);
 }

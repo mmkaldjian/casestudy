@@ -9,22 +9,56 @@
     <link href="css/normalize.css" rel="stylesheet"/>
   </head>
   <body>
-      <h1>Web Comoponents</h1>
+      <h1>Web Components</h1>
 
       <h2>Typography Defaults</h2>
 
     <article class="component">
       <h3 class="component__name">body</h3>
-      <img 
-      srcset ="img/info-text-about.png 2x"
-      src="img/info-text-about.png"
-      alt="body copy">
-
+      <div class="component__img">
+      <img srcset ="img/info-text-about.png 2x" src="img/info-text-about.png" alt="body copy">
+        </div>
       <div class="component__code">
-        Hola Arepa is a restaurant in South Minneapolis serving our take on Latin street food.  We serve Venezuelan-style stuffed arepas, Latin American-influenced small plates, and tropical craft cocktails.
+        <p>Hola Arepa is a restaurant in South Minneapolis serving our take on Latin street food.  We serve Venezuelan-style stuffed arepas, Latin American-influenced small plates, and tropical craft cocktails.</p>
 
-        Chef Christina Nguyen & her partner Birk Grudem started Hola Arepa as a food truck in 2011. Though the truck has been mostly in hibernation since they opened their brick & mortar restaurant in 2014, you can always enjoy their arepas, other dishes & cocktails in a space inspired by their travels to beach towns and charming old cafes in South America, Central America and Mexico.
+        <p>Chef Christina Nguyen & her partner Birk Grudem started Hola Arepa as a food truck in 2011. Though the truck has been mostly in hibernation since they opened their brick & mortar restaurant in 2014, you can always enjoy their arepas, other dishes & cocktails in a space inspired by their travels to beach towns and charming old cafes in South America, Central America and Mexico.</p>
       </div>
     </article>
+    
+    <article class="component">
+
+        <h3 class="component__name">headings (h1, h2, h3, h4)</h3>
+        <div class="component__img">
+        <img srcset ="img/header-title.png 2x" src="img/header-title.png" alt="h1">
+        <img srcset ="img/header-navbar-item.png 2x" src="img/header-navbar-item.png" alt="h2">
+        <img srcset ="img/info-button-dine.png 2x" src="img/info-button-dine.png" alt="h4">
+        <img srcset ="img/h5.png 2x" src="img/h5.png" alt="h5">
+        </div>
+
+        <div class="component__code">
+            <h1>Hola Arepa</h1>
+            <h2><a href="#!">Order Takeout</a></h2>
+            <h3>Dine with us</h3>
+            <h4>Follow us on Instagram @holaarepa for all the latest!</h4>
+        </div>
+      </article>
+
+      <article class="component">
+
+        <h3 class="component__name">button</h3>
+
+        <div class="component__img">
+        <img srcset ="img/info-button-dine.png 2x" src="img/info-button-dine.png" alt="button dine">
+        <img srcset ="img/info-button-pickup.png 2x" src="img/info-button-pickup.png" alt="button pickup">
+        <img srcset ="img/primary_gallery-button.png 2x" src="img/primary_gallery-button.png" alt="button menu">
+        </div>
+
+        <div class="component__code">
+            <h3><a href="#!" class="button">Dine with us</a></h3>
+            <h3><a href="#!" class="button">Order Curbside Pickup</a></h3>
+            <h3><a href="#!" class="button">View menus</a></h3>
+        </div>
+      </article>
+
   </body>
 </html>
