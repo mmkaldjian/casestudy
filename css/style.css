@@ -110,7 +110,7 @@ img {
 /*button*/
 
 .button {
-    background-color: var(--teal);
+    background: var(--teal);
     color: white; /*won't need this line in final project, h3 and links will be automatically white*/
     border-radius: 25px;
     padding: 15px 25px 15px 25px;
@@ -132,4 +132,40 @@ img {
     grid-template-columns: 200px 200px 200px 200px 200px;
     grid-gap: 15px;
     margin: 40px; /*could change; added for separation from other galleries*/
+}
+
+/*icons*/
+
+.cart-icon {
+    /*note: if have time, will add "0" on top of the cart icon using absolute positioning*/
+    font-size: 1.5em;
+    margin: 10px; /*for display purposes, may change or remove*/
+}
+
+.cart-value {
+    /*note: I know that this is not how it would actually be done when complete, as it would need to pull information from a shopping cart, but I wanted to formally fit the look */ 
+    color: white;
+    font-size: .2em;
+    background: black;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 1px 8px 1px 8px;
+    display: inline-block;
+    position: relative;
+    right: 20px; bottom: 10px;
+}
+
+.social-icon {
+    font-size: 1em;
+    background: var(--white);
+    color: var(--teal);
+    border-radius: 50%; /*change from this to actual images with circles, makes it too difficult when different icons have different widths; ie. the facebook icon doesn't appear circular*/
+    padding: 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-icons {
+    background: var(--teal); /*this will be removed when placed in footer*/
+    display: flex;
 }
