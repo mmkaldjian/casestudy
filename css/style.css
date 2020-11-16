@@ -104,3 +104,26 @@ img {
 .component__code {
     border: 1px solid var(--dark-gray);
 }
+
+/*button*/
+.button {
+    background-color: var(--teal);
+    color: white; /*won't need this line in final project, h3 and links will be automatically white*/
+    border-radius: 25px;
+    padding: 15px 25px 15px 25px;
+    margin: 20px 20px 20px 20px; /*why isn't this working?*/
+}
+
+/*galleries*/
+.gallery {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 10px;
+    margin: 40px; /*could change; added for separation from other galleries*/
+}
+.footer-gallery {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 15px;
+    margin: 40px; /*could change; added for separation from other galleries*/
+}
