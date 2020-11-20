@@ -189,12 +189,24 @@ img {
 
 /*Header*/
 
+.header-item {
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item-title {
+    padding: 20px 0px 0px 0px; /*is this the best way to do this? Why is the nav list list creating atomatic padding that makes me need to do this?*/
+}
 
 
 /*Info Section*/
 .info-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .info-button {
