@@ -189,12 +189,20 @@ img {
 
 /*Header*/
 
-.
 
 
 /*Info Section*/
+.info-buttons {
+    display: flex;
+    justify-content: space-around;
+}
 
-.
+.info-button {
+    display: inline-block;
+    margin: 0px 0px 10px 0px;
+}
+
+/*how to have space under <hr> bar and not just over?  Make sure to add this in.
 
 /*Primary Gallery*/
 
