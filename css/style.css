@@ -137,7 +137,6 @@ img {
 /*icons*/
 
 .cart-icon {
-    /*note: if have time, will add "0" on top of the cart icon using absolute positioning*/
     font-size: 1.5em;
     margin: 10px; /*for display purposes, may change or remove*/
 }
@@ -169,3 +168,34 @@ img {
     background: var(--teal); /*this will be removed when placed in footer*/
     display: flex;
 }
+
+
+/*Hours & Location*/
+/*need to add some space between items in table - how?*/
+
+/*Main Nav list*/
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list-item {
+    display: inline-block;
+    padding: 5px;
+}
+
+/*SECTIONS*/
+
+/*Header*/
+
+.
+
+
+/*Info Section*/
+
+.
+
+/*Primary Gallery*/
+
+/*Footer*/
