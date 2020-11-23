@@ -219,3 +219,20 @@ img {
 /*Primary Gallery*/
 
 /*Footer*/
+.footer {
+    margin: auto; /*idk if I need this; may just be solved by centerirng entire page..*/
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours {
+    display: inline-block; /*how to make surer these don't go onto new line when page shrinks?*/
+}
+
+.map {
+    display: inline-block;
+    margin: 0px 80px 0px 80px; /*the righthand margin will change based upon entire page margins */
+}
