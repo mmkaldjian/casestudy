@@ -13,6 +13,12 @@ html {
     box-sizing: inherit;
   }
 
+/* img {
+    width: 100%;
+}
+*/
+/*will comment this back in when doing actual page; for now, didn't want to have to resize every screenshot*/
+
 /*typography*/
 
 /*note: will adjust sizing and text color (white) when coding actual page; kept dark gray for readability againt white background. Do I need to specify text size here? I don't think so; it's more text style for now, can add size when doing individual sections, I think).
@@ -211,7 +217,7 @@ img {
 
 .info-button {
     display: inline-block;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 60px 10px 60px; /*should i be doing this in a percentage way so that it changes with sizing?*/
 }
 
 /*how to have space under <hr> bar and not just over?  Make sure to add this in.
