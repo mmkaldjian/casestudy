@@ -1,0 +1,244 @@
+:root {
+    --font-sans-serif: futura-pt, sans-serif;
+    --dark-gray: #737373;
+    --light-gray: #ddd;
+    --white: #fff;
+    --teal: #28b6b8;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* img {
+    width: 100%;
+}
+*/
+/*will comment this back in when doing actual page; for now, didn't want to have to resize every screenshot*/
+
+/*typography*/
+
+/*note: will adjust sizing and text color (white) when coding actual page; kept dark gray for readability againt white background. Do I need to specify text size here? I don't think so; it's more text style for now, can add size when doing individual sections, I think).
+*/
+
+body {
+    font-family: var(--font-sans-serif);
+    color: var(--dark-gray);
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.667;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-sans-serif);
+}
+
+h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+
+h2 {
+    font-weight: 500; /* weight isn't looking exact, try again when showing up on top of image*/
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .08em;
+}
+
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .08em;
+}
+
+h4 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*links
+
+note: commented out all white links, to preserve visibility for this exercise. Will un-comment out for the actual page.*/
+
+a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+/*
+a:link {
+    color: var(--white);
+}
+
+a:visited {
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--light-gray);
+}
+
+/* A link that is selected/active (except for the logo, need to make sure doesn't change color*/
+/*a:active {
+    color: var(--light-gray);
+}
+
+/*images*/
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/*component*/
+
+.component {
+    max-width: initial;
+}
+
+.component__img {
+    border: 1px solid var(--dark-gray);
+    overflow-x: auto;
+}
+
+.component__code {
+    border: 1px solid var(--dark-gray);
+}
+
+/*button*/
+
+.button {
+    background: var(--teal);
+    color: white; /*won't need this line in final project, h3 and links will be automatically white*/
+    border-radius: 25px;
+    padding: 15px 25px 15px 25px;
+    display: inline-block;
+    margin: 10px; /*could change; added for separation from each other*/
+}
+
+/*galleries*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 10px;
+    margin: 40px; /*could change; added for separation from other galleries*/
+}
+
+.footer-gallery {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 15px;
+    margin: 40px; /*could change; added for separation from other galleries*/
+}
+
+/*icons*/
+
+.cart-icon {
+    font-size: 1.5em;
+    margin: 10px; /*for display purposes, may change or remove*/
+}
+
+.cart-value {
+    /*note: I know that this is not how it would actually be done when complete, as it would need to pull information from a shopping cart, but I wanted to formally fit the look */ 
+    color: white;
+    font-size: .2em;
+    background: black;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 1px 8px 1px 8px;
+    display: inline-block;
+    position: relative;
+    right: 20px; bottom: 10px;
+}
+
+.social-icon {
+    font-size: 1em;
+    background: var(--white);
+    color: var(--teal);
+    border-radius: 50%; /*change from this to actual images with circles, makes it too difficult when different icons have different widths; ie. the facebook icon doesn't appear circular*/
+    padding: 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-icons {
+    background: var(--teal); /*this will be removed when placed in footer*/
+    display: flex;
+}
+
+
+/*Hours & Location*/
+/*need to add some space between items in table - how?*/
+
+/*Main Nav list*/
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list-item {
+    display: inline-block;
+    padding: 5px;
+}
+
+/*SECTIONS*/
+
+/*Header*/
+
+.header-item {
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item-title {
+    padding: 20px 0px 0px 0px; /*is this the best way to do this? Why is the nav list list creating atomatic padding that makes me need to do this?*/
+}
+
+
+/*Info Section*/
+.info-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-button {
+    display: inline-block;
+    margin: 0px 60px 10px 60px; /*should i be doing this in a percentage way so that it changes with sizing?*/
+}
+
+/*how to have space under <hr> bar and not just over?  Make sure to add this in.
+
+/*Primary Gallery*/
+
+/*Footer*/
+.footer {
+    margin: auto; /*idk if I need this; may just be solved by centerirng entire page..*/
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours {
+    display: inline-block; /*how to make surer these don't go onto new line when page shrinks?*/
+}
+
+.map {
+    display: inline-block;
+    margin: 0px 80px 0px 80px; /*the righthand margin will change based upon entire page margins */
+}
