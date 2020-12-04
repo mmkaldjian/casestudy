@@ -16,7 +16,9 @@ html {
   }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 10%;
+    margin: auto 0;
 }
 
 /*typography*/
@@ -41,12 +43,12 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.2em; /*why is this showing up so big???*/
     letter-spacing: .1em;
 }
 
 h2 {
-    font-weight: 500; /* weight isn't looking exact, try again when showing up on top of image*/
+    font-weight: 500;
     text-transform: uppercase;
     font-size: .8em;
     letter-spacing: .08em;
@@ -113,7 +115,6 @@ img {
 
 .button {
     background: var(--teal);
-    color: white; /*won't need this line in final project, h3 and links will be automatically white*/
     border-radius: 25px;
     padding: 15px 25px 15px 25px;
     display: inline-block;
@@ -128,7 +129,7 @@ img {
 .header {
     display: flex;
     justify-content: space-between;
-    background-image: url("img/header-image.jpg");
+    background-image: url("../img/header-image.jpg");
 }
 
 /*galleries*/
@@ -137,12 +138,14 @@ img {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-gap: 10px;
+    justify-content: center;
 }
 
 .footer-gallery {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px;
     grid-gap: 15px;
+    justify-content: center;
 }
 
 /*icons*/
@@ -176,8 +179,6 @@ img {
 }
 
 
-
-
 /*Hours & Location*/
 /*need to add some space between items in table - how?*/
 
@@ -194,8 +195,6 @@ img {
 }
 
 /*SECTIONS*/
-
-
 
 
 /*Info Section*/
@@ -224,19 +223,37 @@ img {
     justify-content: space-between;
 }
 
-.hours {
-    display: inline-block; /*how to make surer these don't go onto new line when page shrinks?*/
-}
+
 
 .map {
-    display: inline-block;
-    margin: 0px 200px 0px 80px; /*this is a quick fix; how do I make the image fit within the margins and shrink when the page shrinks??? */
+    padding: 0px 0px 0px 80px; /*this is a quick fix; how do I make the image fit within the margins and shrink when the page shrinks??? also, why is there still a margin on the right side of the map/*/
 }
 
 .social-icons {
     display: flex;
+    justify-content: center;
 }
 
 .footer-background {
     background: var(--teal);
+}
+
+
+/*highlights*/
+
+.highlight {
+    text-align: center;
+}
+
+.highlight-text {
+    padding: 250px 0px 250px 0px;
+    color: var(--white);
+}
+
+.highlight-image1 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image1.jpg");
+}
+
+.highlight-image2 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image2.jpg")
 }
