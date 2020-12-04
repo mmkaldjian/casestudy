@@ -9,15 +9,15 @@
 html {
     box-sizing: border-box;
   }
-  *, *:before, *:after {
+  *, 
+  *:before, 
+  *:after {
     box-sizing: inherit;
   }
 
-/* img {
+img {
     width: 100%;
 }
-*/
-/*will comment this back in when doing actual page; for now, didn't want to have to resize every screenshot*/
 
 /*typography*/
 
@@ -31,6 +31,7 @@ body {
     font-weight: 300;
     font-style: normal;
     line-height: 1.667;
+    margin: auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,16 +64,13 @@ h4 {
     font-style: normal;
 }
 
-/*links
-
-note: commented out all white links, to preserve visibility for this exercise. Will un-comment out for the actual page.*/
+/*links*/
 
 a {
     text-decoration: none;
     color: var(--dark-gray);
 }
 
-/*
 a:link {
     color: var(--white);
 }
@@ -86,7 +84,7 @@ a:hover {
 }
 
 /* A link that is selected/active (except for the logo, need to make sure doesn't change color*/
-/*a:active {
+a:active {
     color: var(--light-gray);
 }
 
@@ -104,13 +102,11 @@ img {
     max-width: initial;
 }
 
-.component__img {
+.container {
     border: 1px solid var(--dark-gray);
-    overflow-x: auto;
-}
+    margin: 0 50px 0 50px;
+    padding: 1rem;
 
-.component__code {
-    border: 1px solid var(--dark-gray);
 }
 
 /*button*/
@@ -121,7 +117,18 @@ img {
     border-radius: 25px;
     padding: 15px 25px 15px 25px;
     display: inline-block;
-    margin: 10px; /*could change; added for separation from each other*/
+}
+
+/*Header*/
+
+.header-item {
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("img/header-image.jpg");
 }
 
 /*galleries*/
@@ -130,14 +137,12 @@ img {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-gap: 10px;
-    margin: 40px; /*could change; added for separation from other galleries*/
 }
 
 .footer-gallery {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px;
     grid-gap: 15px;
-    margin: 40px; /*could change; added for separation from other galleries*/
 }
 
 /*icons*/
@@ -170,10 +175,7 @@ img {
     margin: 5px;
 }
 
-.social-icons {
-    background: var(--teal); /*this will be removed when placed in footer*/
-    display: flex;
-}
+
 
 
 /*Hours & Location*/
@@ -193,20 +195,7 @@ img {
 
 /*SECTIONS*/
 
-/*Header*/
 
-.header-item {
-    display: inline-block;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-item-title {
-    padding: 20px 0px 0px 0px; /*is this the best way to do this? Why is the nav list list creating atomatic padding that makes me need to do this?*/
-}
 
 
 /*Info Section*/
@@ -227,6 +216,7 @@ img {
 /*Footer*/
 .footer {
     margin: auto; /*idk if I need this; may just be solved by centerirng entire page..*/
+    color: var(--white);
 }
 
 .footer-flex {
@@ -240,5 +230,13 @@ img {
 
 .map {
     display: inline-block;
-    margin: 0px 80px 0px 80px; /*the righthand margin will change based upon entire page margins */
+    margin: 0px 200px 0px 80px; /*this is a quick fix; how do I make the image fit within the margins and shrink when the page shrinks??? */
+}
+
+.social-icons {
+    display: flex;
+}
+
+.footer-background {
+    background: var(--teal);
 }
