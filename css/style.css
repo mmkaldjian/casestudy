@@ -14,7 +14,7 @@ html {
   *:after {
     box-sizing: inherit;
   }
-
+  
 img {
     width: 100%;
     height: auto;
@@ -100,7 +100,7 @@ img {
 /*component*/
 
 .container {
-    border: 1px solid var(--dark-gray); /*when i get rid of the border, it adds margins to the top and bottom margins. How to get rid of this/*/
+    /*border: 1px solid var(--dark-gray); /*when i get rid of the border, it adds margins to the top and bottom margins. How to get rid of this/*/
     margin: 0 100px 0 100px;
 
 }
@@ -112,6 +112,10 @@ img {
     border-radius: 25px;
     padding: 15px 25px 15px 25px;
     display: inline-block;
+}
+
+.menu-button {
+    text-align: center;
 }
 
 /*Header*/
@@ -139,14 +143,14 @@ img {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 300px); /*why is this still making the images leave the container instead of going down to two columns??*/
+    grid-template-columns: repeat(auto-fit, 300px); /*why is this still making the images leave the container instead of going down to two columns??*/
     grid-gap: 10px;
     justify-content: center;
 }
 
 .footer-gallery {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-columns: repeat(auto-fit, 200px);
     grid-gap: 15px;
     justify-content: center;
 }
@@ -221,8 +225,10 @@ img {
 }
 
 .map {
-    padding: 0px 0px 0px 80px; /*this is a quick fix; how do I make the image fit within the margins and shrink when the page shrinks??? also, why is there still a margin on the right side of the map/*/
-    width: 75%;
+    padding: 0px !important; /*this is a quick fix; how do I make the image fit within the margins and shrink when the page shrinks??? also, why is there still a margin on the right side of the map/*/
+    width: 60%;
+    margin: 0px !important;
+    border: solid black 1px;
 }
 
 .social-icons {
@@ -234,11 +240,14 @@ img {
     background: var(--teal);
 }
 
+.ig-text {
+    text-align: center;
+}
 
 /*highlights*/
 
 .highlight-text {
-    padding: 250px 0px 250px 0px;
+    padding: 375px 0px 375px 0px;
     color: var(--white);
     text-align: center;
 }
