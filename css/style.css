@@ -17,7 +17,6 @@ html {
   
 img {
     width: 100%;
-    height: auto;
 }
 
 /*typography*/
@@ -25,7 +24,6 @@ img {
 body {
     font-family: var(--font-sans-serif);
     color: var(--dark-gray);
-    font-family: futura-pt, sans-serif;
     font-weight: 300;
     font-style: normal;
     line-height: 1.667;
@@ -94,14 +92,14 @@ a:active {
 /*images*/
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
-/*component*/
+/*containers*/
 
 .container {
     /*border: 1px solid var(--dark-gray); /*when i get rid of the border, it adds margins to the top and bottom margins. How to get rid of this/*/
-    margin: 0 100px 0 100px;
+    margin: 0 100px 0 100px; /*in order to create margin for entire page except for the header*/
 
 }
 
@@ -139,24 +137,6 @@ img {
     color: var(--white); 
 }
 
-/*galleries*/
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px); /*why is this still making the images leave the container instead of going down to two columns??*/
-    grid-gap: 10px;
-    justify-content: center;
-}
-
-.footer-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
-    grid-gap: 15px;
-    justify-content: center;
-}
-
-/*icons*/
-
 .cart-icon {
     font-size: 1.5em;
     margin: 10px;
@@ -174,21 +154,6 @@ img {
     right: 20px; bottom: 10px;
 }
 
-.social-icon {
-    font-size: 1em;
-    background: var(--white);
-    color: var(--teal);
-    border-radius: 50%;
-    padding: 10px;
-    display: inline-block;
-    margin: 5px;
-}
-
-/*Hours & Location*/
-/*need to add some space between items in table*/
-
-/*Main Nav list*/
-
 .menu-list {
     list-style: none;
     display: flex;
@@ -199,8 +164,21 @@ img {
     padding: 5px;
 }
 
-/*SECTIONS*/
+/*Galleries*/
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.footer-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 15px;
+    justify-content: center;
+}
 
 /*Info Section*/
 .info-buttons {
@@ -211,6 +189,27 @@ img {
 .info-button {
     display: inline-block;
     margin: 0px 60px 10px 60px; /*should i be doing these in a percentage way so that it changes with sizing?*/
+}
+
+/*Highlights*/
+
+.highlight-text {
+    padding: 375px 0px 375px 0px;
+    color: var(--white);
+    text-align: center;
+}
+
+.highlight-image1 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.highlight-image2 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Footer*/
@@ -236,31 +235,20 @@ img {
     justify-content: center;
 }
 
+.social-icon {
+    font-size: 1em;
+    background: var(--white);
+    color: var(--teal);
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
 .footer-background {
     background: var(--teal);
 }
 
 .ig-text {
     text-align: center;
-}
-
-/*highlights*/
-
-.highlight-text {
-    padding: 375px 0px 375px 0px;
-    color: var(--white);
-    text-align: center;
-}
-
-.highlight-image1 {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.highlight-image2 {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
