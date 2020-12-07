@@ -127,7 +127,7 @@ img {
     margin: 0px 60px 10px 60px;
 }
 
-/*Header*/
+/*header*/
 
 .header {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/header-image.jpg");
@@ -174,7 +174,7 @@ img {
     padding: 5px;
 }
 
-/*Galleries*/
+/*galleries*/
 
 .gallery {
     display: grid;
@@ -191,7 +191,7 @@ img {
     justify-content: center;
 }
 
-/*Highlights*/
+/*highlights*/
 
 .highlight__text {
     padding: 375px 0px 375px 0px;
@@ -213,7 +213,7 @@ img {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image2.jpg");
 }
 
-/*Footer*/
+/*footer*/
 .footer {
     color: var(--white);
 }
