@@ -14,7 +14,7 @@ html {
   *:after {
     box-sizing: inherit;
   }
-  
+
 img {
     width: 100%;
 }
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 1.2em; /*why is this showing up so big??? it shouldn't be*/
+    font-size: 1.2em;
     letter-spacing: .1em;
 }
 
@@ -99,8 +99,7 @@ img {
 /*containers*/
 
 .container {
-    /*border: 1px solid var(--dark-gray); /*when i get rid of the border, it adds margins to the top and bottom margins. How to get rid of this/*/
-    margin: 0 100px 0 100px; /*in order to create margin for entire page except for the header*/
+    margin: 0 100px 0 100px;
 }
 
 /*button*/
@@ -114,6 +113,7 @@ img {
 
 .button__menu {
     text-align: center;
+    margin: 0px 0px 50px 0px;
 }
 
 .button__info-group {
@@ -179,8 +179,9 @@ img {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
-    grid-gap: 10px;
+    grid-column-gap: 10px;
     justify-content: center;
+    margin: 75px 0px;
 }
 
 .gallery__footer {
@@ -198,17 +199,18 @@ img {
     text-align: center;
 }
 
-.highlight__image--top {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image1.jpg");
+.highlight__image {
     background-size: cover;
     background-repeat: no-repeat;
+    margin: -20px 0px;
+}
 
+.highlight__image--top {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image1.jpg");
 }
 
 .highlight__image--bottom {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/highlight-image2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /*Footer*/
@@ -227,7 +229,7 @@ img {
 }
 
 .footer__map {
-    padding: 0px !important; /*this is a quick fix; how do I make the image fit within the margins and shrink when the page shrinks??? also, why is there still a margin on the right side of the map/*/
+    padding: 0px;
     width: 60%;
     margin: 0px;
 }
